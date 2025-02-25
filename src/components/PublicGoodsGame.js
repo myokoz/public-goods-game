@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { Users, Settings } from "lucide-react";
+
 
 const PublicGoodsGame = () => {
-  const [gameSettings, setGameSettings] = useState({
+  const [gameSettings] = useState({
     maxRounds: 10,
     multiplier: 1.5,
     initialEndowment: 10,
   });
   
-  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  
   const [round, setRound] = useState(1);
   const [gameStatus, setGameStatus] = useState("playing");
   const [gameHistory, setGameHistory] = useState([]);
